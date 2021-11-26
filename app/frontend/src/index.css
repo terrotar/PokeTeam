@@ -44,9 +44,77 @@
 
 
 .main {
+    display: flex;
     position: absolute;
     background: #E9EAEC;
     height: 86.8%;
     width: 100%;
     top: 6.7rem;
 }
+
+
+.my-team {
+    display: flex;
+    margin-left:20px;
+    margin-top: 10px;
+    width: 319px;
+    height: 261px;
+}
+
+
+.my-team .icon {
+    height: 2.75rem;
+}
+
+
+.my-team .team-name {
+    display: flex;
+    height: 2rem;
+}
+
+
+
+.my-team h1 {
+    margin-left: 20px;
+
+    font-family: Spartan;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 13px;
+    line-height: 48px;
+
+    /* identical to box height, or 369% */
+
+    color: #333652;
+
+
+}
+
+.my-team img {
+    width: 10px;
+    height: 10px;
+    margin-left: 6px;
+}
+
+
+.my-team .button-group {
+    display: flex;
+    position: absolute;
+    margin-top: 221px;
+    right: 36px;
+}
+
+.my-team .delete-button {
+    width: 40px;
+    height: 40px;
+    background-image: url('./imgs/DeleteButton.png');
+}
+
+
+.my-team .confirm-button {
+    margin-left: 13px;
+    width: 40px;
+    height: 40px;
+    background-image: url('./imgs/ConfirmButton.png');
+}
+

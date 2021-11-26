@@ -1,11 +1,14 @@
 import React from 'react';
+import MyTeam from '../components/MyTeam';
 
 
-const MainPoke = () => {
+function MainPoke(props) {
     return (
     <div className="main">
+        <MyTeam />
     </div>
     )
 }
+
 
 export default MainPoke;

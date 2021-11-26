@@ -10,12 +10,15 @@ import App from './App';
 // Components
 import HeaderNewTeam from "./components/HeaderNewTeam";
 import MainPoke from "./components/MainPoke";
+import MyTeam from "./components/MyTeam";
 
 
 ReactDOM.render(
     <div>
-      <HeaderNewTeam></HeaderNewTeam>
-      <MainPoke></MainPoke>
+      <HeaderNewTeam />
+        <MainPoke>
+            <MyTeam />
+        </MainPoke>
       <App />
     </div>,
   document.getElementById('root')
