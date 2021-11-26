@@ -18,7 +18,6 @@ ReactDOM.render(
       <HeaderNewTeam />
         <MainPoke>
         </MainPoke>
-      <App />
     </div>
     </>,
   document.getElementById('root')

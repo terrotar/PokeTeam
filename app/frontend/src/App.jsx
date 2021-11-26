@@ -18,12 +18,13 @@ const App = () => {
 
     const data = await response.json();
 
-    console.log(data);
+    return console.log(data);
   }
 
   useEffect(() => {
     getAllPoke();
   }, [])
+
   return (
     <div>
       <h1>Welcome to PokeTeam</h1>

@@ -3,7 +3,7 @@ import MyTeam from '../components/MyTeam';
 import AllPokemons from '../components/AllPokemons';
 
 
-function MainPoke(props) {
+function MainPoke() {
     return (
     <div className="main">
         <MyTeam />

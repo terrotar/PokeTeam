@@ -6,7 +6,7 @@ const HeaderNewTeam = () => {
         <div className="new-team">
             <div className="header">
                 <hr className="header-bar" />
-                <a className="link">TEAMS</a>
+                <a href="#" className="link">TEAMS</a>
             </div>
         </div>
     )
