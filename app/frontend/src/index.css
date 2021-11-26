@@ -44,7 +44,6 @@
 
 
 .main {
-    display: flex;
     position: absolute;
     background: #E9EAEC;
     height: 86.8%;
@@ -75,19 +74,12 @@
 
 
 .my-team h1 {
-    margin-left: 20px;
-
     font-family: Spartan;
     font-style: normal;
     font-weight: 800;
     font-size: 13px;
     line-height: 48px;
-
-    /* identical to box height, or 369% */
-
     color: #333652;
-
-
 }
 
 .my-team img {
@@ -118,3 +110,27 @@
     background-image: url('./imgs/ConfirmButton.png');
 }
 
+
+.main .all-pokemons {
+    position: relative;
+    margin-left:15px;
+    margin-top: 23px;
+    width: 320px;
+    height: 395px;
+}
+
+
+.all-pokemons h1{
+    position: relative;
+    font-family: Spartan;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 13px;
+    line-height: 48px;
+    color: #333652;
+}
+
+
+.all-pokemons .list-pokemons {
+    margin-left: 15px;
+}

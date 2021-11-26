@@ -1,7 +1,5 @@
 import React from 'react';
 import pencilIcon from '../imgs/Vector.png';
-import DeleteIcon from '../imgs/DeleteButton.png';
-import ConfirmIcon from '../imgs/ConfirmButton.png';
 
 
 const MyTeam = () => {
@@ -16,7 +14,7 @@ const MyTeam = () => {
         </div>
 
         <div className="pokemon-team">
-            
+
         </div>
 
         <div className="button-group">

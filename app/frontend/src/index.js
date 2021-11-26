@@ -10,16 +10,16 @@ import App from './App';
 // Components
 import HeaderNewTeam from "./components/HeaderNewTeam";
 import MainPoke from "./components/MainPoke";
-import MyTeam from "./components/MyTeam";
 
 
 ReactDOM.render(
+  <>
     <div>
       <HeaderNewTeam />
         <MainPoke>
-            <MyTeam />
         </MainPoke>
       <App />
-    </div>,
+    </div>
+    </>,
   document.getElementById('root')
 );
