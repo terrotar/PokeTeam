@@ -1,10 +1,10 @@
-import React, { useState, useEffect } from 'react';
+import React, { useEffect } from 'react';
 // import './app.css';
 
 
 const App = () => {
-  
-  const all_poke = useState
+
+  // const all_poke = useState
 
   const getAllPoke = async () => {
     const requestArgs = {
@@ -26,7 +26,7 @@ const App = () => {
   }, [])
   return (
     <div>
-      <h1>Welcome to FastReact</h1>
+      <h1>Welcome to PokeTeam</h1>
     </div>
   );
 }

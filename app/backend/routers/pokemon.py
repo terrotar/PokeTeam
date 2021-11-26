@@ -14,7 +14,7 @@ router = APIRouter(prefix='/pokemon',
 
 # Get all pokemons
 @router.get("/all")
-def read_pokemons(db: Session = Depends(database.get_db)):
+async def read_pokemons(db: Session = Depends(database.get_db)):
     app_poke = pokemon.get_all_pokemons(db)
     if app_poke:
         return app_poke.json()
