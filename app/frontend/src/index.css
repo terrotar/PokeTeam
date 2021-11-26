@@ -1,0 +1,52 @@
+
+.new-team {
+    height: 100%;
+}
+
+.header {
+    position: absolute;
+    width: 375px;
+    height: 110px;
+    left: 0px;
+    top: 0px;
+
+    background: #90ADC6;
+}
+
+.header .link {
+    position: absolute;
+    width: 69px;
+    height: 48px;
+    left: 153px;
+    top: 64px;
+
+    font-family: Spartan;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 18px;
+    line-height: 48px;
+
+    /* identical to box height, or 267% */
+    text-align: center;
+
+    color: #FFFFFF;
+}
+
+
+.header-bar {
+    margin-left: 2.5rem;
+    width: 18.5rem;
+    height: 1px;
+    margin-top: 3.5rem;
+
+    background: #FFFFFF;
+}
+
+
+.main {
+    position: absolute;
+    background: #E9EAEC;
+    height: 86.8%;
+    width: 100%;
+    top: 6.7rem;
+}

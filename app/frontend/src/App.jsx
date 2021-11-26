@@ -7,14 +7,14 @@ const App = () => {
   // const all_poke = useState
 
   const getAllPoke = async () => {
-    const requestArgs = {
+    const requestOptions = {
       method: 'GET',
       headers: {
         'Content-Type': 'application/json',
       },
     };
 
-    const response = await fetch("/pokemon/all", requestArgs);
+    const response = await fetch("/pokemon/all", requestOptions);
 
     const data = await response.json();
 
