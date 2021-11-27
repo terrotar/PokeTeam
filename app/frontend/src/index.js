@@ -5,7 +5,6 @@ import ReactDOM from 'react-dom';
 import "bulma/css/bulma.min.css";
 
 import "./index.css";
-import App from './App';
 
 // Components
 import HeaderNewTeam from "./components/HeaderNewTeam";

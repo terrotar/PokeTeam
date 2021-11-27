@@ -18,10 +18,9 @@ class ListPokemons extends Component {
 
     render() {
         return (
-            <div className="list-pokemons">
-                {this.state.pokemons.map(pokemon => <p key={pokemon.id}>{pokemon.name}</p>)}
-              <p>Pokémon: Name</p>
-            </div>
+            <ul className="columns list-pokemons">
+                {this.state.pokemons.map(pokemon => <li key={pokemon.id} className="Column">{pokemon.name}</li>)}
+            </ul>
           );
     }
   }
