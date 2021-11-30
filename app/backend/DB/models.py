@@ -13,14 +13,15 @@ class Pokemon(Base):
     # Attributes
     id = sql.Column(sql.Integer, primary_key=True, autoincrement=True)
     name = sql.Column(sql.String(40), unique=True)
+    sprite = sql.Column(sql.String)
     type_01 = sql.Column(sql.String(20))
-    type_02 = sql.Column(sql.String(20))
+    type_02 = sql.Column(sql.String(20), default=None)
 
     # Methods
 
     # Relationships User
-    teams = relationship('Team', backref='pokemons')
-
+    # teams = relationship('Team', backref='pokemons')
+"""
 
 class Team(Base):
     # Table's name
@@ -29,12 +30,8 @@ class Team(Base):
     # Attributes
     id = sql.Column(sql.Integer, primary_key=True, autoincrement=True)
     owner = sql.Column(sql.String(40), default="My")
-    pokemon_01 = sql.Column(sql.Integer, sql.ForeignKey("pokemon.id"))
-    pokemon_02 = sql.Column(sql.Integer, sql.ForeignKey("pokemon.id"))
-    pokemon_03 = sql.Column(sql.Integer, sql.ForeignKey("pokemon.id"))
-    pokemon_04 = sql.Column(sql.Integer, sql.ForeignKey("pokemon.id"))
-    pokemon_05 = sql.Column(sql.Integer, sql.ForeignKey("pokemon.id"))
-    pokemon_06 = sql.Column(sql.Integer, sql.ForeignKey("pokemon.id"))
+    # pokemon_01 = sql.Column(sql.Integer, sql.ForeignKey("pokemon.id"))
 
     # Relationships User
-    pokemons = relationship('Pokemon', backref='teams')
+    # pokemon_01 = relationship('Pokemon', foreign_keys="pokemon.id", backref='teams')
+"""

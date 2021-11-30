@@ -163,3 +163,61 @@
     line-height: 11px;
   }
 
+
+.list-pokemons .pokemon {
+    width: 5.8rem;
+    margin-bottom: 1rem;
+    margin-top: 1rem;
+}
+
+
+.pokemon pokemon-sprite {
+    position: relative;
+    margin-left: -1rem;
+    margin-right: 0.3rem;
+    max-width: 140rem;
+}
+
+.pokemon .pokemon-name {
+    padding-top: 0rem;
+    margin-top: -0.5rem;
+    text-align: center;
+}
+
+
+.pokemon div {
+    display: flex;
+    margin-top: -6rem;
+}
+
+.pokemon img {
+    margin-top: -1.5rem;
+}
+
+.pokemon section {
+    display: flex;
+    text-align: center;
+}
+
+.pokemon p {
+    position: absolute;
+    width: 18px;
+    height: 18px;
+
+    background: #90ADC6;
+    border-radius: 50px;
+
+    width: 18px;
+    height: 18px;
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 6px;
+    line-height: 17px;
+    margin-top: -1rem;
+    position: relative;
+    top: 0.15rem;
+    margin-left: -0.2rem;
+
+    color: #FFFFFF;
+}

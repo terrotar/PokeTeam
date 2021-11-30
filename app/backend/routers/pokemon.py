@@ -17,9 +17,15 @@ router = APIRouter(prefix='/pokemon',
 async def read_pokemons(db: Session = Depends(database.get_db)):
     app_poke = pokemon.get_all_pokemons(db)
     if app_poke:
-        return app_poke.json()
+        return app_poke
 
     raise HTTPException(
         status_code=400,
-        detail="Couldn't access PokéAPI"
+        detail="Database is empty"
     )
+
+
+@router.get("/generate_pokemons")
+async def create_pokemons(db: Session = Depends(database.get_db)):
+    pokemon.generate_all_pokemons(db)
+    return {"message": "Pokemons created with success"}
