@@ -1,5 +1,7 @@
 import React from 'react';
 import pencilIcon from '../imgs/Vector.png';
+import confirmButton from '../imgs/ConfirmButton.png';
+import deleteButton from '../imgs/DeleteButton.png';
 
 
 const MyTeam = () => {
@@ -18,8 +20,8 @@ const MyTeam = () => {
         </div>
 
         <div className="button-group">
-            <a className="delete-button"></a>
-            <a className="confirm-button"></a>
+            <a className="delete-button"><img src={deleteButton} alt="delete button" /></a>
+            <a className="confirm-button"><img src={confirmButton} alt="confirm button" /></a>
         </div>
 
     </div>
