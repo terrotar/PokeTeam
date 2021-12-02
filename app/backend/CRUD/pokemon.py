@@ -57,7 +57,3 @@ def generate_all_pokemons(db: Session):
     # Generate the pokemons
     for poke in all_poke:
         pokemon_generator(db, poke=poke['url'])
-
-    # Return all pokemons in database
-    all_pokemons = db.query(models.Pokemon).all()
-    return all_pokemons
